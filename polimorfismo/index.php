@@ -54,8 +54,8 @@
     $gato = new Gato();
 
     if(isset($_POST['realizarPolimorfismo'])) {
-        echo "El perro hace: " . hacerRuido($perro). "<br>","<br>";
-        echo "El gato hace: " . hacerRuido($gato). "<br>";
+        echo "El perro: " . hacerRuido($perro). "<br>","<br>";
+        echo "El gato: " . hacerRuido($gato). "<br>";
     }
     ?>
 
