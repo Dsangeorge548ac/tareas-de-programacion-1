@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .contenedor-de-listas {
+    margin: 40px;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    height: 85px;
+    background-color: rgb(169, 169, 169);
+  }
+
+  h1 {
+    color: rgb(56, 56, 56);
+    margin: 25px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Estilo general */
+  ul {
+    list-style-type: disc; /* Marcadores son puntos negros */
+    list-style-image: url("https://images.app.goo.gl/uPwDsiFhPPZtwMpUA"); /* Usar una imagen como marcador */
+    list-style-position: inside; /* Posición del marcador dentro del elemento li */
+    background-image: url("https://images.app.goo.gl/8J2vQJ5z8qyK9jZw9"); /* Agregar una imagen de fondo */
+    background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
+    color: rgb(0, 0, 0); /* Cambiar el color de fuente a blanco */
+  }
+
+  li {
+    margin-left: 20px; /* Espacio entre los elementos li */
+  }
+  
+  ul, ol {
+    padding: 20px;
+  }
+  
+  ul li::before {
+    content: "\\*"; /* Añade contenido: \\2022 es el código/unicode para un punto */
+    color: red; /* Cambia el color */
+    font-weight: bold; /* Si quieres que sea negrita */
+    display: inline-block; /* Necesario para añadir espacio entre el punto y el texto */
+    width: 1em; /* También necesario para el espacio (ajusta si es necesario) */
+    margin-left: -1em; /* También necesario para el espacio (ajusta si es necesario) */
+  }
+  
+  ul li {
+    /* Color del marcador */
+    color: rgb(0, 0, 0);
+    list-style-type: disc;
+  }
+  
+  ul li span {
+    /* Color del texto */
+    color: black;
+  }
+  
+  .cuadro {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5em;
+  }
+
+  table {
+    margin-bottom: 5em;
+    width: 70%;
+  }
+
+  caption {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  th {
+    padding: 10px;
+  }
+
+  tr {
+    text-align: left;
+  }
+
+  td {
+    padding: 20px;
+  }
+
+  footer {
+    display: flex;
+    background-color: whitesmoke;
+    height: 80px;
+  }
+
+  footer p {
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (max-width: 950px) {
+    footer {
+      height: auto;
+      display: block;
+    }
+  }
+
+  
